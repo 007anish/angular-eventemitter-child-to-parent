@@ -1,0 +1,6 @@
+<button (click)="addCountry()">Add country in parent</button>
+
+<app-child
+    [(optionList)]="countriesList"
+    (optionListChange)="countriesListChanged($event)">
+</app-child>
